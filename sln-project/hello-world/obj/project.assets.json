@@ -1,0 +1,94 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "echo-hello-world/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/echo-hello-world.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/echo-hello-world.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "echo-hello-world/1.0.0": {
+      "type": "project",
+      "path": "../echo-hello-world/echo-hello-world.csproj",
+      "msbuildProject": "../echo-hello-world/echo-hello-world.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "echo-hello-world >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/anveshmuppeda/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/anveshmuppeda/Desktop/Anvesh/my_learn/git/basic-dotnet-projects/sln-project/hello-world/hello-world.csproj",
+      "projectName": "hello-world",
+      "projectPath": "/Users/anveshmuppeda/Desktop/Anvesh/my_learn/git/basic-dotnet-projects/sln-project/hello-world/hello-world.csproj",
+      "packagesPath": "/Users/anveshmuppeda/.nuget/packages/",
+      "outputPath": "/Users/anveshmuppeda/Desktop/Anvesh/my_learn/git/basic-dotnet-projects/sln-project/hello-world/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/anveshmuppeda/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/anveshmuppeda/Desktop/Anvesh/my_learn/git/basic-dotnet-projects/sln-project/echo-hello-world/echo-hello-world.csproj": {
+              "projectPath": "/Users/anveshmuppeda/Desktop/Anvesh/my_learn/git/basic-dotnet-projects/sln-project/echo-hello-world/echo-hello-world.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
